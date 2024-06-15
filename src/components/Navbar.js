@@ -4,12 +4,12 @@ const Navbar = () => {
   return (
     <nav className="flex flex-col lg:flex-row justify-between m-6 mb-14">
       <div>
-        <h1 className="text-3xl font-bold">Bite Box🍴</h1>
+        <img src="/images/logo.png" alt="logo" className="w-24 mb-3 lg:w-48"/>
       </div>
       <div>
         <input
           type="search"
-          name="search"
+          name="search"   
           id=""
           placeholder="Search here"
           autoComplete="off"
