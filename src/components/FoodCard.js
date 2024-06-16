@@ -3,6 +3,7 @@ import { FaStar } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../reduxStore/slices/CartSlice";
 
+
 const FoodCard = (props) => {
   const dispatch = useDispatch();
 
