@@ -23,10 +23,15 @@ const Cart = () => {
           />
         </div>
 
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
+        {cartItems.length > 0 ? (
+          cartItems.map((food) => {
+            return <ItemCard key={food.id} {...food} qty={food.qty} />;
+          })
+        ) : (
+          <h2 className="text-center text-lg font-semibold text-gray-800">
+            Your Cart is Empty!
+          </h2>
+        )}
 
         <div className="absolute bottom-0 mb-5">
           <h3 className="font-semibold text-gray-800">Items:</h3>
@@ -37,7 +42,10 @@ const Cart = () => {
           </button>
         </div>
       </div>
-      <FaShoppingCart onClick={() => setActiveCart(!activeCart)} className="text-5xl rounded-full bg-green-300 hover:bg-green-400 shadow-2xl p-3 fixed bottom-4 right-4"/>
+      <FaShoppingCart
+        onClick={() => setActiveCart(!activeCart)}
+        className="text-5xl rounded-full bg-green-300 hover:bg-green-400 shadow-2xl p-3 fixed bottom-4 right-4"
+      />
     </div>
   );
 };
