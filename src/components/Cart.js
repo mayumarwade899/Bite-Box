@@ -3,6 +3,7 @@ import { IoMdClose } from "react-icons/io";
 import ItemCard from "./ItemCard";
 import { useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const [activeCart, setActiveCart] = useState(false);
@@ -18,10 +19,12 @@ const Cart = () => {
     0
   );
 
+  const navigate = useNavigate();
+
   return (
     <div>
       <div
-        className={`fixed right-0 top-0 w-full lg:w-[20vw] h-full p-5 bg-gray-50 ${
+        className={`fixed right-0 top-0 w-full lg:w-[20vw] h-full p-5 bg-slate-100 ${
           activeCart ? "translate-x-0" : "translate-x-full"
         } transition-all duration-500 z-50`}
       >
@@ -45,16 +48,21 @@ const Cart = () => {
 
         <div className="absolute bottom-0 mb-5">
           <h3 className="font-semibold text-gray-800">Items: {totalQty}</h3>
-          <h3 className="font-semibold text-gray-800">Total Amount: {totalPrice}</h3>
+          <h3 className="font-semibold text-gray-800">
+            Total Amount: {totalPrice}
+          </h3>
           <hr className="w-[90vw] lg:w-[18vw] my-2" />
-          <button className="bg-green-400 font-bold px-2 rounded-md w-[90vw] lg:w-[18vw] text-white py-2 hover:bg-green-600">
+          <button
+            onClick={() => navigate("/success")}
+            className="bg-green-400 font-bold px-2 rounded-md w-[90vw] lg:w-[18vw] text-white py-2 hover:bg-green-600"
+          >
             Checkout
           </button>
         </div>
       </div>
       <FaShoppingCart
         onClick={() => setActiveCart(!activeCart)}
-        className={`text-5xl rounded-full bg-green-300 hover:bg-green-400 shadow-2xl p-3 fixed bottom-4 right-4 ${
+        className={`text-5xl rounded-full bg-white hover:bg-green-400 shadow-2xl p-3 fixed bottom-4 right-4 ${
           totalQty > 0 && "animate-bounce delay-300 transition-all"
         }`}
       />

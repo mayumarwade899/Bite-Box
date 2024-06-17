@@ -37,7 +37,7 @@ const FoodData = [
   },
   {
     id: 5,
-    img: "https://w7.pngwing.com/pngs/843/171/png-transparent-pizza-73-restaurant-catupiry-chicken-as-food-pizza-baked-goods-food-recipe-thumbnail.png",
+    img: "https://img.freepik.com/premium-photo/side-view-bbq-chicken-pizza-with-tomatoes-paprika-isolated-white-background_79762-3005.jpg",
     name: "BBQ Chicken Pizza",
     price: 170,
     desc: "Savor the smoky goodness of this BBQ Chicken Pizza, featuring tender pieces of chicken marinated in barbecue sauce, red onions, and a medley of cheeses. A fusion of flavors that's sure to delight your taste buds.",
@@ -127,7 +127,7 @@ const FoodData = [
   },
   {
     id: 15,
-    img: "https://w7.pngwing.com/pngs/47/171/png-transparent-chinese-noodles-hot-and-sour-soup-risotto-lomi-lamian-slippery-mushrooms-risotto-dusi-soup-food-recipe-thumbnail.png",
+    img: "https://img.freepik.com/premium-photo/risotto-with-mushrooms-isolated-white-background_185193-75132.jpg",
     name: "Mushroom Risotto",
     price: 175,
     desc: "Indulge in creamy and flavorful mushroom risotto, made with Arborio rice, sautéed mushrooms, and a touch of Parmesan cheese. A comforting and sophisticated dinner choice.",
@@ -172,7 +172,7 @@ const FoodData = [
   },
   {
     id: 20,
-    img: "https://w7.pngwing.com/pngs/435/847/png-transparent-pincho-canape-skewer-fruit-others-thumbnail.png",
+    img: "https://thumbs.dreamstime.com/b/fruit-skewers-27553966.jpg",
     name: "Fruit Skewers",
     price: 70,
     desc: "Indulge in a colorful assortment of fruit skewers featuring juicy chunks of melon, berries, pineapple, and more. A sweet and refreshing snack that's both delicious and visually appealing.",

@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="flex flex-col lg:flex-row justify-between m-6 mb-14">
       <div>
-        <img src="/images/logo.png" alt="logo" className="w-24 mb-3 lg:w-48"/>
+        <img src="/images/logo.png" alt="logo" className="w-24 ml-5 mb-3 lg:w-24"/>
       </div>
       <div>
         <input
