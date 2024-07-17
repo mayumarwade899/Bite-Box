@@ -8,7 +8,7 @@ const FoodCard = (props) => {
 
   return (
     <>
-      <div className="font-bold w-[250px] p-5 bg-white flex flex-col rounded-md gap-2 shadow-lg transition-all duration-500 hover:scale-110">
+      <div className="font-bold w-[250px] p-5 bg-slate-50 flex flex-col rounded-md gap-2 shadow-lg transition-all duration-500 hover:scale-110">
         <img
           src={props.img}
           alt=""
